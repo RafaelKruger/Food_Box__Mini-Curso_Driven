@@ -11,12 +11,41 @@ header {
   color: #fff;
   padding: 2rem;
   border-radius: 1rem;
+  text-align: center;
 }
 header > h1 {
   font-family: Impact;
 }
 
+.products {
+  padding-top: 0.5rem;
+}
+
+.products-section {
+  padding-bottom: 0.5rem;
+}
+
+.products-section > h2 {
+  text-align: center;
+  text-decoration-line: underline;
+}
+
 .product {
+  display: flex;
+  margin-bottom: 0.5rem;
   background-color: #fff;
   border-radius: 1rem;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-img {
+  width: 50%;
+}
+img {
+  width: 90%;
+  border: 0.5rem;
+  border-color: #000;
+  border-radius: 0.5rem;
 }
