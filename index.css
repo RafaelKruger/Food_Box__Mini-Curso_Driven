@@ -1,0 +1,22 @@
+html {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: darkgray;
+}
+
+header {
+  background-color: red;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+header > h1 {
+  font-family: Impact;
+}
+
+.product {
+  background-color: #fff;
+  border-radius: 1rem;
+}
