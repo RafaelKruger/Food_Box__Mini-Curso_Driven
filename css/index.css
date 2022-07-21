@@ -1,3 +1,5 @@
+@import "default.css";
+
 html {
   font-family: "Times New Roman", Times, serif;
 }
@@ -6,18 +8,7 @@ body {
   background-color: darkgray;
 }
 
-header {
-  background-color: red;
-  color: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
-  text-align: center;
-}
-header > h1 {
-  font-family: Impact;
-}
-
-.products {
+#products {
   padding-top: 0.5rem;
 }
 
