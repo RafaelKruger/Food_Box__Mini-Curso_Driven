@@ -23,13 +23,17 @@ body {
 
 .product {
   display: flex;
+  flex-direction: row-reverse;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
-  background-color: #fff;
-  border-radius: 1rem;
-  flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 2px solid white;
+}
+.border-green {
+  border-color: green;
 }
 
 .product-img,
@@ -88,12 +92,12 @@ img {
     justify-content: space-around;
   }
   .products-section {
-    width: 31%;
+    width: 32%;
     display: block;
     padding-bottom: 0rem;
   }
   .product {
-    width: 100%;
+    width: 95%;
     height: 200px;
   }
   #btn-send {
