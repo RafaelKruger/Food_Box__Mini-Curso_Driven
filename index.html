@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <h1>FoodBox</h1>
       <h3>Faça seu combo e receba-o em 15 min.</h3>
       <div id="header-navegation">
@@ -27,8 +27,11 @@
           </div>
           <div class="product-description">
             <h4>Frango Yin-Yang</h4>
-            <p>Descrição do prato.</p>
-            <p><strong>R$ 19,90</strong></p>
+            <p>
+              Coxa e sobrecoxa de frango fritas, batata frita e saladas de
+              alface e tomate.
+            </p>
+            <h4>R$ 19,90</h4>
           </div>
         </div>
         <div class="product">
@@ -38,7 +41,7 @@
           <div class="product-description">
             <h4>Frango Yin-Yang</h4>
             <p>Descrição do prato.</p>
-            <h5>Preço</h5>
+            <h4>Preço</h4>
           </div>
         </div>
       </div>
@@ -52,7 +55,7 @@
           <div class="product-description">
             <h4>Frango Yin-Yang</h4>
             <p>Descrição do prato.</p>
-            <h5>Preço</h5>
+            <h4>Preço</h4>
           </div>
         </div>
         <div class="product">
@@ -62,7 +65,7 @@
           <div class="product-description">
             <h4>Frango Yin-Yang</h4>
             <p>Descrição do prato.</p>
-            <h5>Preço</h5>
+            <h4>Preço</h4>
           </div>
         </div>
       </div>
@@ -76,7 +79,7 @@
           <div class="product-description">
             <h4>Frango Yin-Yang</h4>
             <p>Descrição do prato.</p>
-            <h5>Preço</h5>
+            <h4>Preço</h4>
           </div>
         </div>
         <div class="product">
@@ -86,10 +89,15 @@
           <div class="product-description">
             <h4>Frango Yin-Yang</h4>
             <p>Descrição do prato.</p>
-            <h5>Preço</h5>
+            <h4>Preço</h4>
           </div>
         </div>
       </div>
+    </div>
+    <div id="send">
+      <button id="btn-send" type="submit">
+        <strong>Finalizar Combo</strong>
+      </button>
     </div>
     <footer id="footer">
       <div id="footer-left">
@@ -128,8 +136,10 @@
           <a href="https://pt-br.instagram.com/">
             <i class="fa-brands fa-instagram"></i>
           </a>
-        </di"v>
+        </div>
+        <a id="footer-return" href="#header"><p>Topo</p></a>
       </div>
     </footer>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>

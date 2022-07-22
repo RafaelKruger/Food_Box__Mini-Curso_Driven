@@ -24,6 +24,7 @@ body {
 .product {
   display: flex;
   margin-bottom: 0.5rem;
+  padding: 0.5rem;
   background-color: #fff;
   border-radius: 1rem;
   flex-direction: row-reverse;
@@ -31,12 +32,73 @@ body {
   align-items: center;
 }
 
-.product-img {
-  width: 50%;
+.product-img,
+.product-description {
+  width: 47%;
 }
 img {
-  width: 90%;
-  border: 0.5rem;
-  border-color: #000;
+  width: 100%;
   border-radius: 0.5rem;
+}
+.product-description > h4 {
+  text-align: center;
+}
+.product-description > p {
+  text-align: justify;
+}
+
+#send {
+  display: flex;
+  justify-content: center;
+}
+#btn-send {
+  padding: 0.5rem 1rem;
+  border-color: #000;
+  border-radius: 1rem;
+  background-color: red;
+  color: #fff;
+  font-size: 14px;
+}
+#btn-send:hover {
+  cursor: pointer;
+}
+#btn-send:active {
+  background-color: #fff;
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .products-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .products-section > h2 {
+    width: 100%;
+  }
+  .product {
+    width: 47%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #products {
+    display: flex;
+    justify-content: space-around;
+  }
+  .products-section {
+    width: 31%;
+    display: block;
+    padding-bottom: 0rem;
+  }
+  .product {
+    width: 100%;
+    height: 200px;
+  }
+  #btn-send {
+    margin: 1rem 0 0.5rem 0;
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+  }
 }

@@ -4,27 +4,24 @@ body {
 }
 
 /* Header */
-header {
+#header {
   background-color: red;
   color: #fff;
   padding: 2rem;
   border-radius: 1rem;
   text-align: center;
 }
-header > h1 {
+#header > h1 {
   font-family: Impact;
 }
 
 #header-navegation {
   padding-top: 0.2rem;
 }
-#header-navegation > a {
-  text-align: right;
-  color: #fff;
-}
 
 /* Footer */
 #footer {
+  margin-top: 1rem;
   padding: 1rem;
   border-radius: 1rem;
   background-color: red;
@@ -34,7 +31,8 @@ header > h1 {
 #footer h3 {
   text-align: center;
 }
-#footer p {
+#footer-left > p,
+#footer-right > p {
   text-align: justify;
 }
 
@@ -52,4 +50,24 @@ header > h1 {
 
 #footer-right {
   padding-top: 0.25rem;
+}
+
+#header-navegation > a,
+#footer-return {
+  text-align: right;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  #footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  #footer-left,
+  #footer-right {
+    width: 47%;
+  }
+  #footer-right {
+    padding-top: 0rem;
+  }
 }
