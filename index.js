@@ -7,34 +7,44 @@ const bebida2 = document.querySelector("#bebida2");
 const sobremesa1 = document.querySelector("#sobremesa1");
 const sobremesa2 = document.querySelector("#sobremesa2");
 
+let prato;
+let bebida;
+let sobremesa;
+
 prato1.addEventListener("click", function () {
   removeBorder("pratos");
   prato1.className = "product border-green";
+  prato = "Frango Yin Yang";
 });
 
 prato2.addEventListener("click", function () {
   removeBorder("pratos");
   prato2.className = "product border-green";
+  prato = "Bife à milanesa";
 });
 
 bebida1.addEventListener("click", function () {
   removeBorder("bebidas");
   bebida1.className = "product border-green";
+  bebida = "Refrigerante";
 });
 
 bebida2.addEventListener("click", function () {
   removeBorder("bebidas");
   bebida2.className = "product border-green";
+  bebida = "Suco Natural";
 });
 
 sobremesa1.addEventListener("click", function () {
   removeBorder("sobremesas");
   sobremesa1.className = "product border-green";
+  sobremesa = "Pudim";
 });
 
 sobremesa2.addEventListener("click", function () {
   removeBorder("sobremesas");
   sobremesa2.className = "product border-green";
+  sobremesa = "Sorvete";
 });
 
 function removeBorder(products) {
@@ -56,22 +66,19 @@ function removeBorder(products) {
   }
 }
 
-//   .addEventListener("click", setBorderColor("#prato2"));
+const btnSend = document.querySelector("#btn-send");
 
-// document
-//   .querySelector("#bebida1")
-//   .addEventListener("click", setBorderColor("#bebida1"));
-// document
-//   .querySelector("#bebida2")
-//   .addEventListener("click", setBorderColor("#bebida2"));
+btnSend.addEventListener("click", function () {
+  const message =
+    "Olá, gostaria de pedir um combo: " +
+    prato +
+    ", " +
+    bebida +
+    " e " +
+    sobremesa +
+    ".";
 
-// document
-//   .querySelector("#sobremesa1")
-//   .addEventListener("click", setBorderColor("#sobremesa1"));
-// document
-//   .querySelector("#sobremesa2")
-//   .addEventListener("click", setBorderColor("#sobremesa2"));
+  const number = "5546991402909";
 
-// function setBorderColor(idElement) {
-//   document.querySelector(idElement).className = "product border-green";
-// }
+  window.open("http://wa.me/" + number + "?text=" + message);
+});

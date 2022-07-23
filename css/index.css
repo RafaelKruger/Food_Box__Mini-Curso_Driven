@@ -30,7 +30,7 @@ body {
   align-items: center;
   background-color: #fff;
   border-radius: 1rem;
-  border: 2px solid white;
+  border: 5px double white;
 }
 .border-green {
   border-color: green;
