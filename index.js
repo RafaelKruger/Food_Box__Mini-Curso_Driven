@@ -7,9 +7,9 @@ const bebida2 = document.querySelector("#bebida2");
 const sobremesa1 = document.querySelector("#sobremesa1");
 const sobremesa2 = document.querySelector("#sobremesa2");
 
-let prato;
-let bebida;
-let sobremesa;
+let prato = "sem prato principal";
+let bebida = "sem bebida";
+let sobremesa = "sem sobremesa";
 
 prato1.addEventListener("click", function () {
   removeBorder("pratos");

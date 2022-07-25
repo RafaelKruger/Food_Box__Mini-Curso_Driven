@@ -4,14 +4,15 @@ body {
 
 /* Header */
 #header {
-  background-color: red;
-  color: #fff;
   padding: 2rem;
-  border-radius: 1rem;
+  color: #fff;
   text-align: center;
+  background-color: #e60000;
+  border-radius: 1rem;
 }
 #header > h1 {
   font-family: Impact;
+  text-shadow: 2px 2px #000;
 }
 
 #header-navegation {
@@ -20,25 +21,28 @@ body {
 
 /* Footer */
 #footer {
-  margin-top: 1rem;
   padding: 1rem;
-  border-radius: 1rem;
-  background-color: red;
+  margin-top: 1rem;
   color: #fff;
+  background-color: #e60000;
+  border-radius: 1rem;
 }
-
 #footer h3 {
   text-align: center;
 }
+
 #footer-left > p,
 #footer-right > p {
   text-align: justify;
 }
 
+#footer-right {
+  padding-top: 0.25rem;
+}
 #social-media {
-  padding-top: 0.5rem;
   display: flex;
   justify-content: center;
+  padding-top: 0.5rem;
 }
 #social-media > a {
   margin-right: 1rem;
@@ -47,16 +51,14 @@ body {
   text-decoration: none;
 }
 
-#footer-right {
-  padding-top: 0.25rem;
-}
-
+/* Estilização dos "botões" "Sobre" e  "Topo" */
 #header-navegation > a,
 #footer-return {
-  text-align: right;
   color: #fff;
+  text-align: right;
 }
 
+/* Responsividade para tela de Tablet */
 @media (min-width: 768px) {
   #footer {
     display: flex;
