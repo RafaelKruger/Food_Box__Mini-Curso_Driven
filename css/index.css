@@ -35,6 +35,10 @@ body {
   border: 5px double white;
   border-radius: 1rem;
 }
+.product:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 5px #333;
+}
 .border-green {
   border-color: green;
 }
